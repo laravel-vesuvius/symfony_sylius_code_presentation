@@ -1,0 +1,11 @@
+parameters:
+    sylius.form.type.channel_product_pricing.validation_groups: [sylius]
+
+services:
+    app.form.type.channel_product_pricing:
+        class: AppBundle\Form\Type\ChanelProductPricingType
+        arguments:
+            - '%app.model.chanel_product_pricing.class%'
+            - '%sylius.form.type.channel_product_pricing.validation_groups%'
+        tags:
+            - { name: form.type }

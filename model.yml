@@ -1,0 +1,8 @@
+sylius_resource:
+    resources:
+        app.chanel_product_pricing:
+            classes:
+                model: AppBundle\Entity\ChanelProductPricing
+                interface: AppBundle\Entity\ChanelProductPricingInterface
+                repository: AppBundle\Repository\ChanelProductPricingRepository
+
